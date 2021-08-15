@@ -1,5 +1,6 @@
 body {
   font-family: sans-serif;
+  background-color: lightgray;
 }
 
 a {
@@ -18,4 +19,210 @@ nav a {
 form div {
   margin: 1em;
   display: inline-block;
+}
+
+#nav-bar {
+  display: flex;
+  flex-wrap: wrap;
+    position: fixed;
+    height: 70px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color:#2E2E3A;
+    z-index: 10;
+    border-bottom: 5px solid black;
+}
+
+.nav-text {
+  color: #f34213;
+}
+
+.nav-text::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #f34213;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-text:hover::after {
+  width: 100%;
+}
+
+.site-title {
+  position: relative;
+  color: #f34213;
+  background-color: black;
+  left: 33%;
+  top: -10px;
+  font-size: 45px;
+  padding: 20px;
+  font-family: "Permanent Marker";
+  font-weight: 400;
+  text-decoration: none;
+  /* border: 5px solid #F34213; */
+}
+
+.projects-list {
+  position: absolute;
+  top: 70px;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#auth-form {
+  position: absolute;
+  top: 200px;
+  width: 100%;
+  color: #F34213;
+  font-size: 25px;
+}
+
+.auth-button {
+  background-color: #F34213;
+  height: 35px;
+}
+
+.auth-button:hover {
+  background-color: #2E2E3A;
+  transition: 0.5s;
+}
+
+nav {
+  position: absolute;
+  right: 0px;
+}
+
+
+.single-project {
+  flex: 0 0 30%;
+  padding: 20px;
+  background-color: transparent;
+  mix-blend-mode: multiply;
+  text-align: center;
+}
+
+.can-img {
+  height: 200px;
+  width: 200px;
+}
+
+.can-img:hover{
+  height: 205px;
+  width: 205px;
+}
+
+.project-name {
+  color: #f34213;
+}
+
+.project-name::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #f34213;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.project-name:hover::after {
+  width: 50%;
+}
+
+a:visited {
+  color: #de9151;
+}
+
+#all-project {
+  position: absolute;
+  top: 75px;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#add-project-button:hover {
+  background-color: #f34213;
+  transition: 0.5s;
+}
+
+.single-project-view {
+  position: relative;
+  top: 200px;
+  text-align: center;
+  mix-blend-mode: multiply;
+}
+
+.single-name {
+  color: #f34213;
+}
+
+.your-cart {
+  position: absolute;
+  top: 200px;
+  display: flex;
+  width: 80vw;
+}
+
+.welcome {
+  position: absolute;
+  top: 200px;
+  right: 43%;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+label{
+  margin: 8px;
+}
+
+#container{
+  position: relative;
+  padding: 60px;
+  bottom: 50px;
+}
+
+#container h2{
+  text-align: left;
+}
+
+#edit-container{
+  position: relative;
+  padding:25px;
+  display: flex;
+  align-items: center;
+  flex-wrap: flex;
+}
+
+#checkout-button {
+  position: absolute;
+  right: 50px;
+  top: 50px;
+}
+
+#total-cost {
+  position: absolute;
+  right: 50px;
+  color: #f34213;
+}
+
+#lorem-ipsum {
+  padding: 10px;
+}
+
+cart img {
+  mix-blend-mode: multiply;
 }

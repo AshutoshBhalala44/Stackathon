@@ -9,7 +9,7 @@ class AllProjects extends Component {
   }
 
   componentDidMount() {
-    // fetch all products from db and setstate
+    // fetch all projects from db and setstate
     this.props.getProjects();
   }
 
