@@ -24,9 +24,14 @@ class AllProjects extends Component {
                   <img
                     src={project.imageURL}
                   />
-                  <h3 className="project-name">{project.name}</h3>
+                  <h1 className="project-name">{project.name}</h1>
                 </Link>
               </div>
+                <h2>{project.role}</h2>
+                <h3>
+                    <a href={project.link}>{project.link}</a>
+                </h3>
+                <h4>{project.description}</h4>
             </div>
           ))}
         </div>

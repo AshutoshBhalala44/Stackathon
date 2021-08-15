@@ -20,7 +20,9 @@ class SingleProject extends Component {
             </div>
             <h1 className="single-name">{this.props.project.name}</h1>
             <h2>{this.props.project.role} </h2>
-            <h2>{this.props.project.link} </h2>
+            <h2>
+                <a href={this.props.project.link}>{this.props.project.link}</a> 
+            </h2>
             <h2>{this.props.project.description} </h2>
           </div>
       </div>
