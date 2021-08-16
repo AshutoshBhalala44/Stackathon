@@ -13,11 +13,11 @@ label {
 
 nav a {
   display: inline-block;
-  margin: 1em;
+  margin: 2em;
 }
 
 form div {
-  margin: 1em;
+  margin: 3.5em;
   display: inline-block;
 }
 
@@ -25,24 +25,24 @@ form div {
   display: flex;
   flex-wrap: wrap;
     position: fixed;
-    height: 70px;
+    height: 60px;
     top: 0px;
     left: 0px;
     width: 100%;
-    background-color:#2E2E3A;
+    background-color:rgb(55, 55, 56);
     z-index: 10;
     border-bottom: 5px solid black;
 }
 
 .nav-text {
-  color: #f34213;
+  color: lightcyan;
 }
 
 .nav-text::after {
   content: "";
   width: 0%;
   height: 2px;
-  background: #f34213;
+  background: lightcyan;
   display: block;
   margin: auto;
   transition: 0.5s;
@@ -54,16 +54,16 @@ form div {
 
 .site-title {
   position: relative;
-  color: #f34213;
+  color: lightcyan;
   background-color: black;
-  left: 33%;
-  top: -10px;
-  font-size: 45px;
+  left: 37%;
+  top: -60px;
+  font-size: 40px;
   padding: 20px;
-  font-family: "Permanent Marker";
-  font-weight: 400;
+  font-family: "Verdana";
+  font-weight: 200;
   text-decoration: none;
-  /* border: 5px solid #F34213; */
+  border: 5px solid lightcyan;
 }
 
 .projects-list {
@@ -80,12 +80,12 @@ form div {
   position: absolute;
   top: 200px;
   width: 100%;
-  color: #F34213;
+  color: lightcyan;
   font-size: 25px;
 }
 
 .auth-button {
-  background-color: #F34213;
+  background-color: lightcyan;
   height: 35px;
 }
 
@@ -108,16 +108,6 @@ nav {
   text-align: center;
 }
 
-.can-img {
-  height: 200px;
-  width: 200px;
-}
-
-.can-img:hover{
-  height: 205px;
-  width: 205px;
-}
-
 .project-name {
   color: #f34213;
 }
@@ -136,10 +126,6 @@ nav {
   width: 50%;
 }
 
-a:visited {
-  color: #de9151;
-}
-
 #all-project {
   position: absolute;
   top: 75px;
@@ -148,11 +134,6 @@ a:visited {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-}
-
-#add-project-button:hover {
-  background-color: #f34213;
-  transition: 0.5s;
 }
 
 .single-project-view {
@@ -166,18 +147,10 @@ a:visited {
   color: #f34213;
 }
 
-.your-cart {
-  position: absolute;
-  top: 200px;
-  display: flex;
-  width: 80vw;
-}
-
 .welcome {
   position: absolute;
-  top: 200px;
-  right: 43%;
-  text-align: center;
+  top: 50px;
+  text-align: left;
 }
 
 form {
@@ -199,30 +172,3 @@ label{
   text-align: left;
 }
 
-#edit-container{
-  position: relative;
-  padding:25px;
-  display: flex;
-  align-items: center;
-  flex-wrap: flex;
-}
-
-#checkout-button {
-  position: absolute;
-  right: 50px;
-  top: 50px;
-}
-
-#total-cost {
-  position: absolute;
-  right: 50px;
-  color: #f34213;
-}
-
-#lorem-ipsum {
-  padding: 10px;
-}
-
-cart img {
-  mix-blend-mode: multiply;
-}

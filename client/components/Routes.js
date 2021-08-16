@@ -24,8 +24,6 @@ class Routes extends Component {
             <Route path="/" exact component={AllProjects} />
             <Route path="/project/:id" component={SingleProject} />
             <Route path="/home" component={Home} />
-            <Route path="/login" component={Login} />
-            <Route path="/signup" component={Signup} />
             <Redirect to="/home" />
           </Switch>
         ) : (

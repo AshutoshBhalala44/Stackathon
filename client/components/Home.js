@@ -8,9 +8,9 @@ export const Home = props => {
   const {username} = props;
 
   return (
-    <div>
+    <div className="welcome">
       <h3>Welcome to the Project Portfolio of {username}</h3>
-      <Link to={"/projects"}>
+      <Link to={"/"}>
         <button className="auth-button" type="button">
           Show Projects
         </button>

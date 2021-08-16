@@ -9,7 +9,7 @@ const Navbar = ({ handleClick, isLoggedIn }) => (
     <nav>
       {isLoggedIn ? (
         <div>
-          <Link to="/" className="nav-text">
+          <Link to="/home" className="nav-text">
             Home
           </Link>
           <a className="nav-text" href="#" onClick={handleClick}>
@@ -18,7 +18,7 @@ const Navbar = ({ handleClick, isLoggedIn }) => (
         </div>
       ) : (
         <div>
-          <Link to="/" className="nav-text">
+          <Link to="/home" className="nav-text">
             Home
           </Link>
           <Link to="/login" className="nav-text">
